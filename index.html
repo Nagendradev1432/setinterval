@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        button{
+            margin-left: 650px;
+            height: 60px;
+            width: 140px;
+            background-color: brown;
+            color: rgb(195, 191, 210);
+            font-size: 20px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+  <button id="btn1" onclick="go()">click a button</button>
+    <div id="div1"></div>
+    <img id="img">
+    <script>
+       
+       function go() {
+    let count = 0;
+        let img=document.getElementById("img")
+      const intervalId = setInterval(() => {
+        count++;
+       
+        if (count === 1) {
+            img.setAttribute("src", "https://wallpaperaccess.com/full/5252406.jpg");
+            img.style.width="580px"
+            img.style.height="1200px"
+            img.style.marginLeft="400px"
+            img.style.marginTop="30px"
+            
+        } else if (count === 2) {
+            img.setAttribute("src", "https://tse4.mm.bing.net/th?id=OIP.JeVzORqGUVngGf8544D9xwHaEK&pid=Api&P=0&h=180");
+             img.style.width="900px"
+            img.style.height="600px"
+            img.style.marginLeft="400px"
+        } else if (count === 3) {
+            img.setAttribute("src", "https://tse4.mm.bing.net/th?id=OIP.hIUszzad6cONY3u0r32NiAHaFj&pid=Api&P=0&h=180");
+             img.style.width="900px"
+            img.style.height="600px"
+            img.style.marginLeft="400px"
+
+        }
+        else if(count==4){
+            img.setAttribute("src","https://tse3.mm.bing.net/th?id=OIP.7ybCWV5tr4r4rAwadk2XUwHaEK&pid=Api&P=0&h=180")
+             img.style.width="900px"
+            img.style.height="600px"
+            img.style.marginLeft="400px"
+
+        }
+        else if(count==5){
+            img.setAttribute("src","https://gumlet.assettype.com/freepressjournal/2019-08/73f24ccc-2af8-477e-885e-80c90e7b7bd0/Virat_Kohli_century.jpg?rect=0%2C0%2C3228%2C1816")
+             img.style.width="900px"
+            img.style.height="600px"
+            img.style.marginLeft="400px"
+
+        }
+        else if(count==6){
+            img.setAttribute("src","https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/348100/348138.jpg")
+        }
+         else {
+            clearInterval(intervalId);
+        }
+        
+        div1.appendChild(img); 
+    }, 1000);
+}
+
+        
+    </script>
+</body>
+</html>
